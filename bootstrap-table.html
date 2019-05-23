@@ -4,61 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-  <style>table{
+  <style> .table{
     border-collapse:collapse;
     text-align:left;
     width: 100%;
-    border:hidden;
   }
-  .table tr{
-    border:1px solid #ddd;
-  }
-  .table thead tr{
-    border:2px solid #ddd;
-  }
-  .table-dark{
-    color:white;
-    background-color:rgb(52 58 64);
-  }
-   .table-dark tr{
-    border:1px solid rgb(69 74 85); 
-  }
-   .table-dark thead tr{
-    border:2px solid rgb(69 74 85);
-  }
-   .table-striped tbody tr:nth-child(odd){
-    background-color: grey;
-  }
-  .table-dark.table-striped tbody tr:nth-child(odd){
-    background-color: rgb(62 68 74);
-  }</style>
+.table tr:nth-child(1){
+  border-bottom:2px solid rgb(222,226,230);
+}
+.table tr{
+  border-top:1px solid rgb(222,226,230)
+}
+.table-dark{
+  background-color:rgb(52,58,64) ;
+  color:white;
+}
+.table-dark tr:nth-child(1){
+  border-bottom:2px solid rgb(222,226,230);
+}    
+.table-striped tr:nth-child(even){
+  background-color:rgb(242,242,242);
+}      
+.table-striped.table-striped tr:nth-child(even){
+  background-color:rgb(62,68,74);
+}      
+.table-bordered td{
+  border:1px solid rgb(222,226,230);
+}
+.table-bordered.table-dark td{
+  border:1px solid rgb(69,77,85);
+}
+.table-borderless td{
+  border:hidden;
+}
+.table-hover .one:hover{
+background-color:rgb(236,236,236);
+}
+.table-hover .two:hover{
+background-color:rgb(236,236,236);
+}
+.table-hover .last:hover{
+background-color:rgb(236,236,236);
+}
+.table-hover.table-dark .one:hover{
+background-color:rgb(67,73,78);
+}
+.table-hover.table-dark .two:hover{
+background-color:rgb(67,73,78);
+}
+.table-hover.table-dark .last:hover{
+background-color:rgb(67,73,78);
+}
+</style>
+  
 </head>
 <body>
  <div>
-  <table class="table">
-  <thead>
+  <table class="table table-dark xtable-striped
+                xtable-bordered xtable-borderless
+                table-hover">
     <tr>
-      <th class="one">#</th>
-      <th class="one">First</th>
-      <th class="one">Last</th>
-      <th class="one">Handle</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th class="two">1</th>
+    <tr class="one">
+      <td>1</th>
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
-    <tr>
-      <th class="two">2</th>
+    <tr class="two">
+      <td>2</th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
     </tr>
-    <tr>
-      <th class="two">3</th>
+    <tr class="last">
+      <td>3</th>
       <td>Larry</td>
       <td>the Bird</td>
       <td>@twitter</td>

@@ -1,133 +1,150 @@
 <script id="ch0103/01">
-    var A = Number( +prompt())
-    var B = Number( +prompt())
-    console.log(A + B);
-    </script>
-    <SCript id="ch0103/02">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var c = Number( +prompt())
-    console.log((a + b) * c )
-    </SCript>
-    <script id="ch0103/03">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var c = Number( +prompt())
-    console.log(parseInt((a + b) / c ))
-    </script>
-    <script id="ch0103/04">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var y = (a % b)
-    console.log((a - y) / b) 
-    console.log(a % b)
-    </script>
-    <script id="ch0103/05">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var x = (a / b)
-    console.log(x.toFixed(9))
-    </script>
-    <script id="ch0103/06">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var x =((b / a).toFixed(3))
-    console.log((x * 100 + "%").toFixed(3))
-    </script>
-    <script id="ch0103/07">
-    var x = Number( +prompt())
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    var c = Number( +prompt())
-    var d = Number( +prompt())
-    console.log(((a * x * x * x) + (b * x * x) + (c * x) + (d)).toFixed(7))
-    </script>
-    <script id="ch0103/08">
-    var x = Number( +prompt())
-    console.log((((5 * x) / 9) - (160 / 9)).toFixed(5))
-    </script>
-    <script id="ch0103/09">
-    var x = Number( +prompt())
-    console.log((2 * x).toFixed(4))
-    console.log((2 * 3.1415926 * x ).toFixed(4))
-    console.log((3.1415926 * x * x ).toFixed(4))
-    </script>
-    <script id="ch0103/10">
-    var x = Number( +prompt())
-    var y = Number( +prompt())
-    console.log((1 / ((1 / x) + (1 / y))).toFixed(2))
-    </script>
-    <script id="ch0103/11">
-    var a = Number( +prompt())
-    var b = Number( +prompt())
-    console.log((a % b).toFixed(4))
-    </script>
-    <script id="ch0103/12">
-    var x = Number( +prompt())
-    console.log(((4 / 3) * 3.14 * x * x * x).toFixed(2))
-    </script>
-    <script id="ch0103/13">
-    var a = Number( +prompt())
-    var x = ((a % 10) * 100)
-    var y = ((a % 100) - (a % 10))
-    var z = ((a - (a % 100)) / 100)
-    console.log(x + "" + y + "" + z + "")
-    </script>
-    <script id="ch0103/14">
-    var d = Number( +prompt())
-    var r = Number( +prompt())
-    var x = (20000 / ( 3.14 * r * r * d ))
-    if( x % 1 >0){
-        console.log((x + 1).toFixed(0))
-    }else{
-        console.log(x)
-    }
-    </script>
-    <script id="ch0103/15">
-    var n = Number( +prompt())
-    var x = Number( +prompt())
-    var y = Number( +prompt())
-    var c = (y / x)
-    if( c % 1 >0){
-        var s = ((c + 1).toFixed(0))
-    }else{
-        var s = (c)
-    }
-    console.log(n - s)
-    </script>
-    <script id="ch0103/16">
-    var x1 = Number( +prompt())
-    var y1 = Number( +prompt())
-    var x2 = Number( +prompt())
-    var y2 = Number( +prompt())
-    console.log((Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2)))).toFixed(3))
-    </script>
-    <script id="ch0103/17">
-    var x1 = Number( +prompt())
-    var y1 = Number( +prompt())
-    var x2 = Number( +prompt())
-    var y2 = Number( +prompt())
-    var x3 = Number( +prompt())
-    var y3 = Number( +prompt())
-    var a =(Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2))))
-    var b =(Math.sqrt(((x2 - x3) * (x2 - x3)) + ((y2 -y3) * (y2 - y3))))
-    var c =(Math.sqrt(((x3 - x1) * (x3 - x1)) + ((y3 -y1) * (y3 - y1))))
-    var p =((a + b + c) / 2 )
-    console.log(Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2))
-    </script>
-    <script id="ch0103/18">
-    var a1 = Number( +prompt())
-    var a2 = Number( +prompt())
-    var n = Number( +prompt())
-    var d =(a2 - a1)
-    console.log(a1 + ((n - 1) * d))
-    </script>
-    <script id="ch0103/19">
-    var A = Number( +prompt())
-    var B = Number( +prompt())
-    console.log(A * B);
-    </script>
-    <script id="ch0103/20">
-    var a = Number( +prompt())
-    console.log(2 ** a);
-    </script>
+var A = Number( +prompt())
+var B = Number( +prompt())
+console.log(A + B);
+</script>
+<SCript id="ch0103/02">
+var a = Number( +prompt())
+var b = Number( +prompt())
+var c = Number( +prompt())
+console.log((a + b) * c )
+</SCript>
+<script id="ch0103/03">
+var a = Number( +prompt())
+var b = Number( +prompt())
+var c = Number( +prompt())
+console.log(parseInt((a + b) / c ))
+</script>
+<script id="ch0103/04">
+var a = Number( +prompt())
+var b = Number( +prompt())
+var y = (a % b)
+console.log((a - y) / b) 
+console.log(a % b)
+</script>
+<script id="ch0103/05">
+var a = Number( +prompt())
+var b = Number( +prompt())
+var x = (a / b)
+console.log(x.toFixed(9))
+</script>
+<script id="ch0103/06">
+var a = Number( +prompt())
+var b = Number( +prompt())
+var x =((b / a).toFixed(3))
+console.log((((x * 100).toFixed(3)) + "%"))
+</script>
+<script id="ch0103/07">
+var x = Number( +prompt())
+var a = Number( +prompt())
+var b = Number( +prompt())
+var c = Number( +prompt())
+var d = Number( +prompt())
+console.log(((a * x * x * x) + (b * x * x) + (c * x) + (d)).toFixed(7))
+</script>
+<script id="ch0103/08">
+var x = Number( +prompt())
+console.log((((5 * x) / 9) - (160 / 9)).toFixed(5))
+</script>
+<script id="ch0103/09">
+var x = Number( +prompt())
+console.log((2 * x).toFixed(4))
+console.log((2 * 3.14159 * x ).toFixed(4))
+console.log((3.14159 * x * x ).toFixed(4))
+</script>
+<script id="ch0103/10">
+var x = Number( +prompt())
+var y = Number( +prompt())
+console.log((1 / ((1 / x) + (1 / y))).toFixed(2))
+</script>
+<script id="ch0103/11">
+var a = Number( +prompt())
+var b = Number( +prompt())
+console.log((a % b).toFixed(4))
+</script>
+<script id="ch0103/12">
+var x = Number( +prompt())
+console.log(((4 / 3) * 3.14 * x * x * x).toFixed(2))
+</script>
+<script id="ch0103/13">
+var a = Number( +prompt())
+var x = ((a % 10) * 100)
+var y = ((a % 100) - (a % 10))
+var z = ((a - (a % 100)) / 100)
+console.log(x + "" + y + "" + z + "")
+</script>
+<script id="ch0103/14">
+var d = Number( +prompt())
+var r = Number( +prompt())
+var x = (20000 / ( 3.14 * r * r * d ))
+if( x % 1 >0){
+console.log((x + 1).toFixed(0))
+}else{
+console.log(x)
+}
+</script>
+<script id="ch0103/15">
+var n = Number( +prompt())
+var x = Number( +prompt())
+var y = Number( +prompt())
+var c = (y / x)
+if( c % 1 >0){
+var s = ((c + 1).toFixed(0))
+}else{
+var s = (c)
+}
+console.log(n - s)
+</script>
+<script id="ch0103/16">
+var x1 = Number( +prompt())
+var y1 = Number( +prompt())
+var x2 = Number( +prompt())
+var y2 = Number( +prompt())
+console.log((Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2)))).toFixed(3))
+</script>
+<script id="ch0103/17">
+var x1 = Number( +prompt())
+var y1 = Number( +prompt())
+var x2 = Number( +prompt())
+var y2 = Number( +prompt())
+var x3 = Number( +prompt())
+var y3 = Number( +prompt())
+var a =(Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2))))
+var b =(Math.sqrt(((x2 - x3) * (x2 - x3)) + ((y2 -y3) * (y2 - y3))))
+var c =(Math.sqrt(((x3 - x1) * (x3 - x1)) + ((y3 -y1) * (y3 - y1))))
+var p =((a + b + c) / 2 )
+console.log(Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(2))
+</script>
+<script id="ch0103/18">
+var a1 = Number( +prompt())
+var a2 = Number( +prompt())
+var n = Number( +prompt())
+var d =(a2 - a1)
+console.log(a1 + ((n - 1) * d))
+</script>
+<script id="ch0103/19">
+var A = Number( +prompt())
+var B = Number( +prompt())
+console.log(A * B);
+</script>
+<script id="ch0103/20">
+var a = Number( +prompt())
+console.log(2 ** a);
+</script>
+<script id="ch0104/01">
+var a = Number( +prompt())
+if(a>0){
+    console.log("positive")
+}
+else if(a=0){
+    console.log("zero")
+}
+else{
+    console.log("negative")
+}
+</script>
+<script id="ch0104/02">
+var a = Number( +prompt())
+console.log((Math.sqrt((a)**2)).toFixed(2))
+</script>
+<script id></script>

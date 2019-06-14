@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0%;
+      xbackground-color: rgb(0,0,0,0.1);
+    }
+    html,body{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .uncle{
+      width: 100%;
+      height: 855px;
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-5.jpg);
+      background-size: cover;
+      background-position: 60%,50%;
+    }
+    @media (max-width:1070px) {
+      .uncle{
+        height: 673px;
+      }
+    }
+    .tu2{
+      float: left;
+      width: 25%;
+      height: 260px;
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg);
+      background-size: cover;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    .tu3{
+      float: left;
+      width: 25%;
+      height: 260px;
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg);
+      background-size: cover;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    .tu4{
+      float: left;
+      width: 25%;
+      height: 260px;
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);
+      background-size: cover;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    .tu5{
+      float: left;
+      width: 25%;
+      height: 260px;
+      background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);
+      background-size: cover;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    .hang2{
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 2px solid white;
+      margin-left: -3px;
+      margin-right: -3px;
+    }
+    @media (max-width:1066px){
+      .tu2,.tu3,.tu4,.tu5{
+        width: 50%;
+      }
+    }
+    @media (max-width:630px){
+      .tu2,.tu3,.tu4,.tu5{
+        width: 100%;
+    }
+    }
+    .wei{
+    
+      width: 100%;
+    }
+    .xin{
+      vertical-align: 50%;
+     
+      overflow: hidden;
+    
+      position: relative;
+     
+    }
+    .one,.two,.last{
+      float: left;
+      width: 230px;
+      height: 70px;
+      margin-left: 100px;
+      sline-height: 140px; 
+      position: relative;
+      top: -20px;
+      padding-top: 40px;
+    }
+    
+
+   .biao{
+     width: 60%;
+     margin: auto;
+     position: relative;
+     overflow: hidden;
+   }
+   ul{
+     list-style: none;
+     padding-left: 0%;
+     float: left;
+     margin-top:40px;
+     margin-right: 110px;
+     height: 200px;
+
+   }
+   .card{
+     width: 60%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+        }
+   .c1,.c2,.c3{
+     width: 280px;
+     height: 140px;
+     xborder: 1px solid;
+     line-height: 120px;
+     position: relative;
+   }
+   .c1::after{
+     content: "微信扫一扫，直接用车";
+     position: absolute;
+     top:20px;
+     left: 0px;
+   }
+   .c2::after{
+     content: "骑摩拜，能赚钱";
+     position: absolute;
+     top:20px;
+     left: 0px;
+   }
+   .c3::after{
+     content: "文明骑行，信用生活";
+     position: absolute;
+     top:20px;
+     left: 0px;
+   }
+   .c1::before{
+     content: "";
+     background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-wechat.png);
+     width: 50px;
+     height: 50px;
+     display: block;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top:40px;
+    left: -50px;
+   }
+   .c2::before{
+     content: "";
+     background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-rp.png);
+     width: 50px;
+     height: 50px;
+     display: block;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top:40px;
+    left: -50px;
+   }
+   .c3::before{
+     content: "";
+     background-image: url(https://mobike.com/cn/assets/themes/moby/img/icon-credit.png);
+     width: 50px;
+     height: 50px;
+     display: block;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top:40px;
+    left: -50px;
+   }
+
+
+  </style>
+</head>
+<body>
+  <div class="uncle">
+
+  </div>
+  <div class="hang2">
+    <span class="tu2"></span>
+    <span class="tu3"></span>
+    <span class="tu4"></span>
+    <span class="tu5"></span>
+  </div>
+  <div class="bord">
+    <div class="card">
+      <div class="c1">微信小程序</div>
+      <div class="c2">红包车</div>
+      <div class="c3">摩范分</div>
+    </div>
+  </div>
+  <hr>
+<div class="l">
+  <div class="biao">
+    <ul class="a">摩拜mobike
+      <li>Beijing Mobike Technology Co., Ltd</li>
+      <li>客服电话 400-811-7799</li>
+      <li>北京摩拜科技有限公司</li>
+    </ul>
+    <ul class="b">产品
+      <li>金典版</li>
+      <li>轻骑</li>
+      <li>智能锁</li>
+    </ul>
+    <ul class="c">生活
+      <li>城市</li>
+    </ul>
+    <ul class="d">关于
+      <li>关于mobike</li>
+      <li>加入我们</li>
+      <li>联系我们</li>
+      <li>服务协议</li>
+    </ul>
+    <ul class="e">社交网络
+      <li>微博</li>
+      <li>微信</li>
+      <li>知乎专栏</li>
+      <li>facebook</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

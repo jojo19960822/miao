@@ -13,7 +13,7 @@
     var a = Number( +prompt())
     var b = Number( +prompt())
     var c = Number( +prompt())
-    console.log(((a + b) / c ).toFixed(0))
+    console.log(parseInt((a + b) / c ))
     </script>
     <script id="ch0103/04">
     var a = Number( +prompt())
@@ -32,7 +32,7 @@
     var a = Number( +prompt())
     var b = Number( +prompt())
     var x =((b / a).toFixed(3))
-    console.log(x * 100 + "%")
+    console.log((x * 100 + "%").toFixed(3))
     </script>
     <script id="ch0103/07">
     var x = Number( +prompt())
@@ -40,31 +40,31 @@
     var b = Number( +prompt())
     var c = Number( +prompt())
     var d = Number( +prompt())
-    console.log((a * x * x * x) + (b * x * x) + (c * x) + (d))
+    console.log(((a * x * x * x) + (b * x * x) + (c * x) + (d)).toFixed(7))
     </script>
     <script id="ch0103/08">
     var x = Number( +prompt())
-    console.log( ((5 * x) / 9) - (160 / 9))
+    console.log((((5 * x) / 9) - (160 / 9)).toFixed(5))
     </script>
     <script id="ch0103/09">
     var x = Number( +prompt())
-    console.log(2 * x)
-    console.log(2 * 3.1415926 * x )
-    console.log(3.1415926 * x * x )
+    console.log((2 * x).toFixed(4))
+    console.log((2 * 3.1415926 * x ).toFixed(4))
+    console.log((3.1415926 * x * x ).toFixed(4))
     </script>
     <script id="ch0103/10">
     var x = Number( +prompt())
     var y = Number( +prompt())
-    console.log( 1 / ((1 / x) + (1 / y)))
+    console.log((1 / ((1 / x) + (1 / y))).toFixed(2))
     </script>
     <script id="ch0103/11">
     var a = Number( +prompt())
     var b = Number( +prompt())
-    console.log(a % b)
+    console.log((a % b).toFixed(4))
     </script>
     <script id="ch0103/12">
     var x = Number( +prompt())
-    console.log((4 / 3) * 3.14 * x * x * x)
+    console.log(((4 / 3) * 3.14 * x * x * x).toFixed(2))
     </script>
     <script id="ch0103/13">
     var a = Number( +prompt())
@@ -100,7 +100,7 @@
     var y1 = Number( +prompt())
     var x2 = Number( +prompt())
     var y2 = Number( +prompt())
-    console.log(Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2))))
+    console.log((Math.sqrt(((x1 - x2) * (x1 - x2)) + ((y1 -y2) * (y1 - y2)))).toFixed(3))
     </script>
     <script id="ch0103/17">
     var x1 = Number( +prompt())

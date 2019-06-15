@@ -205,32 +205,19 @@ if((b&&c)==0){
 }
 </script>
 <script id="ch0104/09">
-var a = Number( +prompt())
-var x=(a % 3)
-var y=(a % 5)
-var z=(a % 7)
-if((x==0)&&(y==0)&&(z==0)){
-    console.log(` ` + "3" +  ` ` + "5" +  ` ` + "7")
-}else if((x==0)||(y==0)||(z==0)){
-    if( N% 3 == 0 && N % 5 == 0){
-        console.log( ` ` + "3" +  ` ` + "5")
+var n = Number(prompt());
+    if (n % 3 === 0) {
+      console.log(3);
     }
-    if(N % 5 == 0 && N % 7 == 0){
-        console.log( ` ` + "5" +  ` ` + "7")
+    if (n % 5 === 0) {
+      console.log(5);
     }
-    if(N % 3 == 0 && N % 7 == 0){
-        console.log( ` ` + "3" +  ` ` + "7")
+    if (n % 7 === 0) {
+      console.log(7);
     }
-}
-else if((x==0)&&(y!=0)&&(z!=0)){
-    console.log("3")
-}else if((y==0)&&(x!=0)&&(z!=0)){
-    console.log("5")
-}else if((z==0)&&(y!=0)&&(x!=0)){
-    console.log("7")
-}else{
-console.log("n")
-}
+    if (!((n % 3 === 0) || (n % 5 === 0) || (n % 7 === 0))) {
+      console.log("n");
+    }
 </script>
 <script id="ch0104/10">
 var a = Number( +prompt())

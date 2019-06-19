@@ -594,3 +594,224 @@ for(i=0;i<n;i++){
 var t =Math.ceil(s)
 console.log(t)
 </script>
+<script id="ch0105/20">
+var n =Number( +prompt())
+var m =n
+var sum = 0
+for(i=0;i<10;i++){
+    m=(m / 2)
+    sum = m + sum
+    var z= (sum * 2) + n -(2 * m)
+}
+console.log(z)
+console.log(m)
+</script>
+<script id="ch0105/21">
+var n =Number( +prompt())
+var x =n
+for(i=0;i<n;i++){
+    if(n % 2==0){
+        n = n / 2
+    }else if (n % 2!=0){
+        n = n * 3 + 1
+    }else if(n==1){
+        var x=1
+    }
+}
+</script>
+<script id="ch0105/22">
+var m = 0
+var t = 0
+var z = 1
+for (i = 1; i <= 12; i++) {
+var x = Number(prompt('a'))
+var m = m + (300 - x) 
+if (m < 0) {
+    z = -i
+    console.log(z)
+} if (m >= 100) {
+    t = t + 100 * parseInt(m / 100)
+    m = m - 100 * parseInt(m / 100)
+    } 
+}if (z > 0) {
+    console.log(t * 1.2 + m)
+}       
+    </script>
+<script id="ch0105/23">
+debugger
+var m =Number( +prompt())
+var p =Number( +prompt())
+var x =0
+for(i=0;i<n;i++){
+    var y =Number( +prompt())
+    if(m>=y){
+        m = m -y
+    }else if(m<y){
+        x= x + 1
+    }
+}
+console.log(x)
+</script>
+<script id="ch0105/24">
+var m =Number( +prompt())
+for(i=0;i<m;i++){
+    var x =Number( +prompt())
+    var y =Number( +prompt())
+    if(90<=x && x<=140 && 60<=y && y<=90){
+        x=x + 1
+    }
+}
+</script>
+<script id="ch0105/25">
+for(var i = 49;i<728;i++){
+    var s = i % 7
+    var s2 = ((i - s) / 7) % 7
+    var s3 = ((((i - s) / 7) - s2) / 7) % 7
+    var e = i % 9
+    var e2 = ((i - e) / 9) % 9
+    var e3 = ((((i - e) / 9) - e2) / 9) % 9
+    if(s==e3&&s2==e2&&s3==e){
+        console.log(i,"" + s3 + s2 + s , "" + e3 + e2 + e  )
+    }
+}
+</script>
+<script id="ch0105/26">
+var n=Number( +prompt())
+var y=0
+for(i=0; i<n;i++){
+    var num=Number( +prompt())
+    var x = (num % 10) - (((num % 100) - (num % 10)) / 10) - (((num % 1000) - (num % 100)) / 100) - ((num - (num % 1000)) / 1000)
+    if(x>0){
+        y = y + 1
+    }
+}
+console.log(y)
+</script>
+<script id="ch0105/27">
+    var k=Number( +prompt())
+    var sum = 0
+    for(i=1; ;i++){
+        var x = 1 / i
+        sum = sum + x
+    if(sum>k){
+        console.log(i)
+        break;
+    }
+    }
+</script>
+<script id="ch0105/28">
+debugger
+var n=Number( +prompt())
+var sum = 0
+var sign = n>0 ? 1 : -1
+n = Math.abs(n)
+while(n>0){
+    var dight=n % 10
+    sum = sum  * 10 + dight
+    n=(n - dight) / 10
+}
+console.log(sum * sign)
+</script>
+<script id="ch0105/29">
+var n=Number( +prompt())
+while(n>0){
+    var dight=n % 10
+    console.log(dight)
+    n=(n - dight) / 10
+}
+</script>
+<script id="ch0105/30">
+var m=Number( +prompt())
+var k=Number( +prompt())
+if(n % 19==0){
+    var count3 =0
+     while(n>0){
+         var dight = n % 3
+         if(dight==k){
+             count3++
+         }
+         n=(n - dight) / 3
+     }
+}
+</script>
+
+<script id="105/39">
+var n =Number( + prompt())
+var result = 0
+for (i=1;i<=n;i++){
+    if(i % 7 != 0){
+        var n = i
+        while(n>0){
+            var dight = n % 10
+            if(dight == 7){
+                is = true
+                break
+            }
+            n = (n - dight) / 10
+        }
+    if(n == 0){
+        result +=i * i
+    } // n==0是while循环到结束都没有break即表示此n与7无关需要加1
+    }
+}
+console.log(result)
+</script>
+
+<script id="105/40">
+
+
+
+</script>
+
+
+
+<script id="ch0105/31">
+var n=Number( +prompt())
+var m=Number( +prompt())
+for(i=1;i<=n;i++){
+    var ion = true
+    for (p=1 ;p<=m ; p++){
+        if(p % i==0){
+            if(ion){
+                ion= false
+
+            }else{
+                ion=true
+            }
+        }
+    }
+    if(!ion){
+        console.log(light)
+    }
+}
+</script>
+
+<script>
+    var n =( +prompt())
+    var a = 1
+    var b = 1
+    var sum= 0
+for(var i =0;i<n;i++){
+    b= b + a
+    a = b- a
+    sum+=b / a
+}
+console.log(sum)
+</script>
+<script>
+
+</script>
+
+<script id="ch0105/45">
+var v=Number( +prompt())
+var u= 0
+for(i=1;i<=v;i++){
+    var C =1
+    for(j=1;j<=i;j++){
+        var C = C * j
+        
+    }
+    var u =u + g
+}
+console.log(u)
+</script>

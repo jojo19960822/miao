@@ -496,7 +496,9 @@ for(i=0;i<n;i++){
         var k = k + 1
     }
 }
-console.log(z + "" + g + "" + k)
+console.log(z)
+console.log(g)
+console.log(k)
 </script>
 <script id="ch0105/12">
 var n =Number( +prompt())
@@ -562,7 +564,6 @@ for(i=0;i<n;i++){
     c=a + b
     }
 console.log(c)
-    console.log(sum)
 </script>
 <script id="ch0105/18">
 var n =Number( +prompt())
@@ -680,9 +681,7 @@ for(var i = 49;i<728;i++){
     var e2 = ((i - e) / 9) % 9
     var e3 = ((((i - e) / 9) - e2) / 9) % 9
     if(s==e3&&s2==e2&&s3==e){
-        console.log(i)
-        console.log(s3 * 100 + s2 * 10 + s )
-        console.log(e3 * 100 + e2 * 10 + e)
+        console.log(i + "\n" + s3 + '' + s2 + "" + s + "\n" + e3 + '' + e2 + "" + e + "\n");
     } 
 }
 </script>
@@ -714,7 +713,7 @@ console.log(y)
 var n = Number( + prompt())
 var sum = 0
 while(n > 0){
-    var dight=n%10
+    var dight=n % 10
     sum = sum * 10 + dight 
     n = (n - dight) / 10
 }
@@ -723,10 +722,11 @@ console.log(sum)
 <script id="ch0105/29">
 var n=Number( +prompt())
 var sign = n > 0 ? 1 : -1
+var sum = 0
 n = Math.abs(n)
 while(n>0){
     var dight=n % 10
-    console.log(dight)
+    sum = sum * 10 + dight 
     n=(n - dight) / 10
 }
 console.log(sum * sign)

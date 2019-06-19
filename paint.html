@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>画图</title>
+  <style>
+    canvas {
+      border: 2px solid #f0f;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+</body>
+<script>
+  var canvas = document.querySelector('canvas')
+  canvas.style.imageRendering = 'pixelated'
+  var ctx = canvas.getContext('2d')
+
+  function dot(x, y, color = 'black') {
+    ctx.fillStyle = color
+    ctx.fillRect(x, y, 1, 1)
+  }
+  /**
+   * YOUR TASK
+画图的题：
+画一条实线
+画一条一个实点一个空点的虚线
+画一条两个实点两个空点的虚线
+画一条三个实点两个空点的虚线
+画一条45度的斜线
+画一条跨越画布左上角和右下角的对角线
+画一个空心矩形
+画一个实心矩形
+画一个rgb色彩空间的某一面
+画一个空心的圆
+画一个实心的圆
+画一个大小合适的sin(x)的图像
+   */
+</script>
+<script>
+  // YOUR CODE GOES BELOW
+for(i=0;i<400;i++){
+  dot(10 + i,10,"black")
+};
+// 实线
+for(i=0;i<400;i++){
+  dot(10 + 2 * i,40,"black")
+};
+//10 12 14 16是实点11 13 15是虚点,即一个实点一个虚点的线
+for(i=0;i<400;i++){
+  dot(10 + 4 * i,80,"black")
+}
+// // 10 14 18 22 是实点
+for(i=0;i<400;i++){
+  dot(11 + 4 * i,80,"black")
+};
+// 11 15 19 23 是实点,与上面的重合在一起即为10 11 14 15 18 19 22 23是实点两个实点两个空格是虚线
+for(i=0;i<400;i++){
+  dot(i,i,"black")
+};
+// // 45度线
+for(i=0;i<400;i++){
+  dot(i,(i * (3 / 4)),"black")
+};
+// 在400步里走完300,对角线
+for(i=15;i<=100;i++){
+  dot(30,i)
+}
+for(i=15;i<=100;i++){
+  dot(i + 15 ,15)
+}
+for(i=15;i<=100;i++){
+  dot(115,i)
+}
+for(i=15;i<=100;i++){
+  dot(i + 15,100)
+}
+// 空心正方形
+for(i=50;i<=100;i++){
+  for(j=50;j<=100;j++){
+    dot(i,j)
+  }
+}
+// 实心正方形
+for(i=15;i<=100;i=i+0.31){
+  var a = Math.sin(i * 2) * 50
+  var b = Math.cos(i * 2) * 50
+  dot(a + 250, b + 150)
+}
+// 圆
+for(i=15;i<=100;i=i+0.31){
+  var a = Math.sin(i * 2) *50
+  var b = Math.cos(i * 2) *50
+  for (j=0;j<1;j=j + 0.001){
+    dot(a * j + 50, b * j + 150)
+  }
+}
+// 第二个循环使j在0-1之间与a b相乘
+for ( i=0; i<=100;i=i+0.01 ){
+    var a= Math.cos(i*5)*10
+    var b= Math.sin(i/10)*500
+    dot(200+b,250+a)
+  }
+
+</script>
+</html>
